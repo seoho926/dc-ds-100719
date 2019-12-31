@@ -1,5 +1,4 @@
-"""first test file"""
+def dB(x) :
+    return x * 2
 
-def multiply_by_two(item):
-    """this function is multiplying an argument by two"""
-    return item * 2
+

@@ -1,10 +1,8 @@
-"""Second test"""
+first_variable=4
+second_Variable=6
+third_variable = 8
 
-FIRST_VARIABLE = 4
-SECOND_VARIABLE = 6
-THIRD_VARIABLE = 8
-
-TOTAL = (FIRST_VARIABLE +
-         SECOND_VARIABLE -
-         THIRD_VARIABLE)
-print(TOTAL)
+total = (first_variable +
+           second_Variable -
+         third_variable)
+print(total)

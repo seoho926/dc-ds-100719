@@ -1,24 +1,23 @@
-"""this is the third test file"""
-
 import string
-SHIFT = 3
-CHOICE = input("would you like to encode or decode?")
-WORD = input("Please enter text")
-LETTERS = string.ascii_letters + string.punctuation + string.digits
-ENCODED = ''
-if CHOICE == "encode":
-    for LETTER in WORD:
-        if LETTER == ' ':
-            ENCODED = ENCODED + ' '
+shift = 3
+choice = input("would you like to encode or decode?")
+word =input("Please enter text")
+letTers = string.ascii_letters + string.punctuation + string.digits
+encoded = ''
+if choice == "encode":
+    for letter in word:
+        if letter == ' ':
+            encoded = encoded + ' '
         else:
-            x = (LETTERS.index(LETTER) +
-                 SHIFT)
-            ENCODED = ENCODED + LETTERS[x]
-if CHOICE == "decode":
-    for LETTER in WORD:
-        if LETTER == ' ':
-            ENCODED = ENCODED + ' '
+            x = (letters.index(letter) +
+                 shift)
+            encoded=encoded + letters[x]
+if choice == "decode":
+    for letter in word:
+        if letter == ' ':
+            encoded = encoded + ' '
         else:
-            x = LETTERS.index(LETTER) - SHIFT
-            ENCODED = ENCODED + LETTERS[x]
-    print(ENCODED)
+            x = letTers.index(letter) - shift
+            encoded = encoded + letters[x]
+            
+print(encoded)
